@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Ecommerce webSite</title>
+    <link rel="shortcut icon" href="img/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+#main-body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.head {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.head ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.head ul li {
+  margin: 25px 45px;
+  color: #00ffff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#men {
+  color: inherit;
+}
+
+.head ul li:hover {
+  font-size: 18px;
+  animation: 1s ease all;
+}
+
+.main-pic {
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-pic1 {
+  background-image: url("img/picture.avif");
+  animation: changeMainPic1 20s linear infinite;
+}
+
+@keyframes changeMainPic1 {
+  0% {
+    background-image: url("img/picture.avif");
+  }
+
+  50% {
+    background-image: url("img/menpic6.jpg");
+  }
+  100% {
+    background-image: url("img/pic3.webp");
+  }
+}
+
+.m-sec {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.main-products1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading {
+  color: #deb887;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.heading-font {
+  font-size: 25px;
+}
+
+.row {
+  background-color: inherit;
+  border: 1px solid #0e0e0e;
+  border-radius: 5px;
+  height: 40vh;
+  width: 20vw;
+  text-align: center;
+}
+
+.row:hover {
+  cursor: pointer;
+}
+
+.pic-row {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 20vh;
+  margin: 20px;
+}
+
+.img1 {
+  background-image: url("img/pic1-removebg-preview.png");
+}
+
+.img2 {
+  background-image: url("img/pic2-removebg-preview.png");
+}
+
+.img3 {
+  background-image: url("img/pic3-removebg-preview.png");
+}
+
+.img4 {
+  background-image: url("img/pic4-removebg-preview.png");
+}
+
+.img5 {
+  background-image: url("img/pic5-removebg-preview.png");
+}
+
+.img6 {
+  background-image: url("img/pic6-removebg-preview.png");
+}
+
+.img7 {
+  background-image: url("img/pic7-removebg-preview.png");
+}
+
+.img8 {
+  background-image: url("img/pic8-removebg-preview.png");
+}
+
+.pic-row:hover {
+  margin: 15px;
+}
+
+.main-2 {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Women - Section --> Start */
+
+.main-pic2 {
+  background-image: url("img/pic2.avif");
+  animation: changeMainPic2 20s linear infinite;
+}
+
+@keyframes changeMainPic2 {
+  0% {
+    background-image: url("img/pic2.avif");
+  }
+
+  50% {
+    background-image: url("img/menPic1.avif");
+  }
+  100% {
+    background-image: url("img/menpic3.avif");
+  }
+}
+
+.wimg1 {
+  background-image: url("img/wpic1-removebg-preview.png");
+}
+
+.wimg2 {
+  background-image: url("img/wpic2-removebg-preview.png");
+}
+
+.wimg3 {
+  background-image: url("img/wpic3-removebg-preview.png");
+}
+
+.wimg4 {
+  background-image: url("img/wpic4-removebg-preview.png");
+}
+
+.wimg5 {
+  background-image: url("img/wpic5-removebg-preview.png");
+}
+
+.wimg6 {
+  background-image: url("img/wpic6-removebg-preview.png");
+}
+
+.wimg7 {
+  background-image: url("img/wpic7-removebg-preview.png");
+}
+
+.wimg8 {
+  background-image: url("img/wpic8-removebg-preview.png");
+}
+
+/* Watches - Section --> Start */
+.main-pic3 {
+  background-image: url("img/pic4.avif");
+  animation: changeMainPic3 20s linear infinite;
+}
+
+@keyframes changeMainPic3 {
+  0% {
+    background-image: url("img/pic4.avif");
+  }
+
+  50% {
+    background-image: url("img/pic5.avif");
+  }
+  100% {
+    background-image: url("img/pic6.avif");
+  }
+}
+
+.wtimg1 {
+  background-image: url("img/wtpic10.jpg");
+}
+
+.wtimg2 {
+  background-image: url("img/wtpic3.jpg");
+}
+
+.wtimg3 {
+  background-image: url("img/wtpic4.jpg");
+}
+
+.wtimg4 {
+  background-image: url("img/wtpic5.jpg");
+}
+
+.wtimg5 {
+  background-image: url("img/wtpic6.jpg");
+}
+
+.wtimg6 {
+  background-image: url("img/wtpic7.jpg");
+}
+
+.wtimg7 {
+  background-image: url("img/wtpic8.jpg");
+}
+
+.wtimg8 {
+  background-image: url("img/wtpic9.jpg");
+}
+
+.foot {
+  background-color: #0e0e0e;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 18px;
+}
+
+.foot h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.foot .pointer {
+  color: #00ffff;
+  margin: 0 0 20px 15px;
+  cursor: pointer;
+}
+
+.foot p {
+  color: #deb887;
+}
+
+.mainSection-2,
+.mainSection-3 {
+  display: none;
+}
+
+.viewMain {
+  display: none;
+}
+
+
+
+/* Media Query --> Start */
+@media screen and (max-width: 900px) {
+
+  /* Main Page */
+
+  .viewMain {
+    display: block;
+    background-color: #0e0e0e;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+  }
+
+  .logo h2 {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  .bar {
+    display: inline-block;
+    font-size: 40px;
+    color: #ffffff;
+    /* background-color: #0e0e0e; */
+    /* width: 100%; */
+    cursor: pointer;
+  }
+
+  #cross {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100px;
+    border: none;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .view {
+    background-color: #0e0e0e;
+    height: 222vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+    transition: all .5s;
+  }
+
+  .mobileView {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+  }
+
+  .mobileView li {
+    margin-top: 80px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  .mobileView li:hover{
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+
+  .main-products1 {
+    padding: 20px;
+  }
+
+  .row {
+    height: initial;
+    width: initial;
+    margin-right: 5px;
+  }
+}
+
+
+
+    </style>
+</head>
+
+<body id="main-body">
+    <header>
+        <div class="viewMain">
+            <div class="logo">
+                <h2>Logo</h2>
+                <ion-icon name="reorder-three-outline" class="bar"></ion-icon>
+            </div>
+            <div class="view">
+                <button id="cross">x</button>
+                <ul class="mobileView">
+                    <li class="list">Men</li>
+                    <li class="list">Women</li>
+                    <li class="list">Watches</li>
+                </ul>
+            </div>
+        </div>
+        <div class="head">
+            <ul class="mobileView">
+                <li id="men">Men</li>
+                <li id="women">Women</li>
+                <li id="watch">Watches</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="mainSection-1" id="section-1">
+            <section>
+                <div class="main-pic main-pic1"></div>
+            </section>
+            <section class="m-sec">
+                <h1 class="heading heading-font">Men's Collection</h1>
+                <div class="main-products1">
+                    <div class="row">
+                        <div class="pic-row img1"></div>
+                        <h3 class="heading">Men's Black Running</h3>
+                        <p>Price: 899</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img2"></div>
+                        <h3 class="heading">Men's Navy Running</h3>
+                        <p>Price: 1899</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img3"></div>
+                        <h3 class="heading">Men's White-off Running</h3>
+                        <p>Price: 890</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img4"></div>
+                        <h3 class="heading">Men's Green Running</h3>
+                        <p>Price: 699</p>
+                    </div>
+                </div>
+
+
+                <div class="main-products1 main-2">
+                    <div class="row">
+                        <div class="pic-row img5"></div>
+                        <h3 class="heading">Men's Earth-tone Sneaker</h3>
+                        <p>Price: 1099</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img6"></div>
+                        <h3 class="heading">Men's Classic Ment Sneaker</h3>
+                        <p>Price: 1799</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img7"></div>
+                        <h3 class="heading">Men's Blue Sneaker</h3>
+                        <p>Price: 1999</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img8"></div>
+                        <h3 class="heading">Men's Black-Off Sneaker</h3>
+                        <p>Price: 2019</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="mainSection-2" id="section-2">
+            <section>
+                <div class="main-pic main-pic2"></div>
+            </section>
+            <section class="m-sec">
+                <h1 class="heading heading-font">Women Collection</h1>
+                <div class="main-products1">
+                    <div class="row">
+                        <div class="pic-row img1 wimg1"></div>
+                        <h3 class="heading">Women Black-Off Sneaker</h3>
+                        <p>Price: 899</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img2 wimg2"></div>
+                        <h3 class="heading">Women White-off Running</h3>
+                        <p>Price: 1099</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img3 wimg3"></div>
+                        <h3 class="heading">Women Earth-tone Sneaker</h3>
+                        <p>Price: 509</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img4 wimg4"></div>
+                        <h3 class="heading">Women Blue Sneaker</h3>
+                        <p>Price: 1899</p>
+                    </div>
+                </div>
+
+
+                <div class="main-products1 main-2">
+                    <div class="row">
+                        <div class="pic-row img5 wimg5"></div>
+                        <h3 class="heading">Women Green Running</h3>
+                        <p>Price: 990</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img6 wimg6"></div>
+                        <h3 class="heading">Women Off-White Running</h3>
+                        <p>Price: 999</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img7 wimg7"></div>
+                        <h3 class="heading">Women Running Sneaker</h3>
+                        <p>Price: 1009</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img8 wimg8"></div>
+                        <h3 class="heading">Women Blackish Running</h3>
+                        <p>Price: 599</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="mainSection-3" id="section-3">
+            <section>
+                <div class="main-pic main-pic3"></div>
+            </section>
+            <section class="m-sec">
+                <h1 class="heading heading-font">Watches Collection</h1>
+                <div class="main-products1">
+                    <div class="row">
+                        <div class="pic-row img1 wtimg1"></div>
+                        <h3 class="heading">Gold Watch</h3>
+                        <p>Price: 399</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img2 wtimg2"></div>
+                        <h3 class="heading">Goldest Watch</h3>
+                        <p>Price: 599</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img3 wtimg3"></div>
+                        <h3 class="heading">Silver Stylish Watch</h3>
+                        <p>Price: 890</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img4 wtimg4"></div>
+                        <h3 class="heading">Stylish Watch</h3>
+                        <p>Price: 1699</p>
+                    </div>
+                </div>
+
+
+                <div class="main-products1 main-2">
+                    <div class="row">
+                        <div class="pic-row img5 wtimg5"></div>
+                        <h3 class="heading">Gold Design Watch</h3>
+                        <p>Price: 809</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img6 wtimg6"></div>
+                        <h3 class="heading">Blackish Shade Watch</h3>
+                        <p>Price: 1799</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pic-row img7 wtimg7"></div>
+                        <h3 class="heading">Men's Gold Watch</h3>
+                        <p>Price: 699</p>
+                    </div>
+                    <div class="row">
+                        <div class="pic-row img8 wtimg8"></div>
+                        <h3 class="heading">Radow Design Watch</h3>
+                        <p>Price: 299</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <h5>Save Time</h5>
+            <ion-icon name="logo-facebook" class="pointer fb"></ion-icon>
+            <ion-icon name="logo-twitter" class="pointer"></ion-icon>
+            <ion-icon name="logo-whatsapp" class="pointer"></ion-icon>
+            <p>Your one-stop shop for all your favourite products! </p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script>
+let menBtn = document.getElementById("men");
+let womenBtn = document.getElementById("women");
+let watchBtn = document.getElementById("watch");
+
+let section1 = document.getElementById("section-1");
+let section2 = document.getElementById("section-2");
+let section3 = document.getElementById("section-3");
+
+let bar = document.querySelector(".bar");
+let crossBtn = document.getElementById("cross");
+let view = document.getElementsByClassName("view")[0];
+let mainBody = document.getElementById("main-body");
+let list = document.getElementsByClassName("list");
+
+let fb = document.querySelector(".fb");
+
+window.onload = function () {
+  menBtn.style.color = "#ff0000";
+};
+
+function clickMen() {
+  menBtn.onclick = function () {
+    menBtn.style.color = "#ff0000";
+    womenBtn.style.color = "#00ffff";
+    watchBtn.style.color = "#00ffff";
+    section1.style.display = "initial";
+    section2.style.display = "none";
+    section3.style.display = "none";
+  };
+}
+
+clickMen();
+
+function clickwoMen() {
+  womenBtn.onclick = function () {
+    womenBtn.style.color = "#ff0000";
+    menBtn.style.color = "#00ffff";
+    watchBtn.style.color = "#00ffff";
+    section1.style.display = "none";
+    section2.style.display = "initial";
+    section3.style.display = "none";
+  };
+}
+
+clickwoMen();
+
+function clickWatch() {
+  watchBtn.onclick = function () {
+    watchBtn.style.color = "#ff0000";
+    womenBtn.style.color = "#00ffff";
+    menBtn.style.color = "#00ffff";
+    section1.style.display = "none";
+    section2.style.display = "none";
+    section3.style.display = "initial";
+  };
+}
+
+clickWatch();
+
+function goMain() {
+  fb.onclick = function () {
+    window.open("https://web.facebook.com/rai.hamza.71");
+  };
+}
+
+goMain();
+
+function barShow() {
+  bar.onclick = function () {
+    view.style.display = "block";
+    mainBody.style.height = "100vh";
+    mainBody.style.width = "100vw";
+    mainBody.style.overflow = "hidden";
+  };
+
+  crossBtn.onclick = function () {
+    view.style.display = "none";
+    // view.style.top = "-100%";
+    mainBody.style.height = "initial";
+    mainBody.style.width = "initial";
+    mainBody.style.overflow = "initial";
+  };
+
+  list[0].onclick = function () {
+    view.style.display = "none";
+    section1.style.display = "initial";
+    section2.style.display = "none";
+    section3.style.display = "none";
+    mainBody.style.height = "initial";
+    mainBody.style.width = "initial";
+    mainBody.style.overflow = "initial";
+  };
+  list[1].onclick = function () {
+    view.style.display = "none";
+    section1.style.display = "none";
+    section2.style.display = "initial";
+    section3.style.display = "none";
+    mainBody.style.height = "initial";
+    mainBody.style.width = "initial";
+    mainBody.style.overflow = "initial";
+  };
+  list[2].onclick = function () {
+    view.style.display = "none";
+    section1.style.display = "none";
+    section2.style.display = "none";
+    section3.style.display = "initial";
+    mainBody.style.height = "initial";
+    mainBody.style.width = "initial";
+    mainBody.style.overflow = "initial";
+  };
+}
+
+barShow();
+
+</script>
+</body>
+
+</html>

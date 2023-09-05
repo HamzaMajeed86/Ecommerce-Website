@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - webSite Crete By Me!</title>
+    <link rel="shortcut icon" href="img/fevicon.png" type="image/x-icon">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signInPage {
+  color: #ffffff;
+  display: flex;
+  max-width: 100vw;
+  height: 70vh;
+}
+
+.pic {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #0a0a0a;
+  border-radius: 20px 0 0px 20px;
+  box-shadow: 15px 15px 15px #ffffff;
+  height: 100%;
+  animation: changeImage 20s linear infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("img/pic.avif");
+  }
+
+  50% {
+    background-image: url("img/pic2.avif");
+  }
+
+  100% {
+    background-image: url("img/pic4.avif");
+  }
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 15px 15px 15px #ffffff;
+}
+
+.input,
+.input2 {
+  background-color: #faebd7;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.btn-signUp1 {
+  background-color: inherit;
+  color: #0a0a0a;
+  border: 1px solid #ff0000;
+  border-radius: 9px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-signIn,
+.btn-signUp2 {
+  border: none;
+  border-radius: 9px;
+  background-color: #ff0000;
+  padding: 10px;
+  color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-signUp1:hover,
+.btn-signIn:hover,
+.btn-signUp2:hover,
+.btn-logIn:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: 1px solid #ff0000;
+  border-radius: 9px;
+  transition: 1s ease all;
+}
+
+.remember {
+  color: #ff0000;
+}
+
+.pg-forget {
+  display: inline;
+}
+
+/* Sign-Up page style */
+
+.signUpPage {
+  color: #ffffff;
+  display: flex;
+  max-width: 100vw;
+  height: 70vh;
+  display: none;
+}
+
+.signUp-content {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 15px 15px 15px #ffffff;
+}
+
+.signUp-pic {
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 15px 15px 15px #ffffff;
+  animation: changeSignupPic 20s linear infinite;
+}
+
+@keyframes changeSignupPic {
+  0% {
+    background-image: url("img/menpic2.avif");
+  }
+
+  50% {
+    background-image: url("img/menpic4.avif");
+  }
+
+  100% {
+    background-image: url("img/menpic5.avif");
+  }
+}
+
+.btn-logIn {
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 9px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Main Section --> Start */
+
+/* Media Query --> Start */
+@media screen and (max-width: 900px) {
+  /* LogIn Page */
+
+  .signInPage,
+  .signUpPage {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .pic,
+  .signUp-content {
+    width: 100%;
+    box-shadow: initial;
+    border-radius: 70px 0 0 0;
+    padding: 20px;
+  }
+
+  .content,
+  .signUp-pic {
+    width: 100%;
+    box-shadow: initial;
+    border-radius: 0 0 70px 0;
+    padding: 20px;
+  }
+
+  
+}
+
+
+</style>
+</head>
+
+<body id="body">
+    <div class="signInPage" id="logInShow">
+        <div class="pic">
+            <h2>Create Account</h2>
+            <p>Experience Personalized access like never before SignUp today and discover a tailored
+                online experience.</p>
+            <button class="btn-signUp1" id="btn1">Sign Up</button>
+        </div>
+        <div class="content">
+            <form action="#" class="form">
+                <h1>Sign In</h1>
+                <label for="uname">Username</label><br><br>
+                <input type="text" id="uname" class="input" placeholder="username"><br><br>
+                <label for="pswd">Password</label><br><br>
+                <input type="password" id="pswd" class="input" placeholder="password"><br><br>
+                <button class="btn-signIn" id="btn2">Sign In</button><br><br>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember" class="remember">Remember</label>
+                <p class="pg-forget">Forget Password?</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="signUpPage" id="signUpShow">
+        <div class="signUp-content">
+            <form action="#" class="form">
+                <h1>Sign Up</h1>
+                <label for="name">Name</label><br><br>
+                <input type="text" id="name" class="input2" placeholder="enter your name"><br><br>
+                <label for="mail">Email</label><br><br>
+                <input type="email" id="mail" class="input2" placeholder="enter your email"><br><br>
+                <label for="dob">Date of Birth</label><br><br>
+                <input type="date" id="dob" class="input2"><br><br>
+                <label for="pswd2">Password</label><br><br>
+                <input type="password" id="pswd2" placeholder="password" class="input2"><br><br>
+                <button class="btn-signUp2" id="btn3">Sign Up</button>
+            </form>
+        </div>
+        <div class="signUp-pic">
+            <h2>Log In</h2>
+            <p>A trusted platform for your digital presence.Login and stay connected.</p>
+            <button class="btn-logIn" id="btn4">Log In</button>
+        </div>
+    </div>
+    <script>
+	let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+let btn4 = document.getElementById("btn4");
+
+let input = document.querySelectorAll(".input2");
+let arr = Array.from(input);
+
+let uname = document.getElementById("uname");
+let pswd = document.getElementById("pswd");
+
+let logInShow = document.getElementById("logInShow");
+let signUpShow = document.getElementById("signUpShow");
+
+function signUp() {
+  btn1.onclick = function () {
+    logInShow.style.display = "none";
+    signUpShow.style.display = "flex";
+  };
+}
+
+signUp();
+
+function logIn() {
+  btn4.onclick = function () {
+    signUpShow.style.display = "none";
+    logInShow.style.display = "flex";
+  };
+}
+
+logIn();
+
+function signUpNow() {
+  arr.forEach((e) => {
+    btn3.onclick = function () {
+      if (e.value != "") {
+        signUpShow.style.display = "none";
+        logInShow.style.display = "flex";
+      } else {
+        alert("Please fill all blank fields!");
+      }
+    };
+  });
+}
+
+signUpNow();
+
+function logInNow() {
+  btn2.onclick = function () {
+    if (uname.value != "" && pswd.value != "") {
+      window.open("index2.html");
+    } else {
+      alert("Please fill all blank fields!");
+    }
+  };
+}
+
+logInNow();
+
+</script>
+</body>
+
+</html>
